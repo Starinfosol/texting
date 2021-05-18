@@ -19,12 +19,12 @@ from django.conf.urls import include, url
 # from django.contrib.staticfiles.urls import staticfiles.urlpatterns
 # urlpatterns += staticfile_urlpatterns()
 
-# admin.site.site_header = "Starinfosol Admin"
-# admin.site.site_title = "Starinfosol Admin Portal"
-# admin.site.index_title = "Welcome to Starinfosol"
+admin.site.site_header = "Starinfosol Admin"
+admin.site.site_title = "Starinfosol Admin Portal"
+admin.site.index_title = "Welcome to Starinfosol"
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('', include('home.urls'))
+    path('', include('home.urls'))
 ]
